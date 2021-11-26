@@ -87,10 +87,10 @@ img {
 .site-top {
     background-color: #F3D7B7;
     padding: 40px 0 250px 0;
-    background-image: url(../img/intro-bg-image.jpg), url(../img/intro-stamp.png);
+    background-image: url(../img/intro-stamp.png),url(../img/intro-bg-image.jpg);
     background-repeat: no-repeat;
-    background-position: calc(50% + 355px) bottom, top 25px center;
-    background-size: 710px 696px, 160px 160px;
+    background-position: top 25px center,calc(50% + 355px) bottom;
+    background-size: 160px 160px, 710px 696px;
     z-index: -1;
     margin-bottom: 20px;
 }
@@ -399,7 +399,6 @@ img {
 .working-system__item::before {
     text-align: right;
     content: counter(son);
-    content: '01';
     /*TODO:not working*/
     top: 20px;
     right: 20px;
@@ -407,7 +406,6 @@ img {
     line-height: 75px;
     color: #333333;
     opacity: 0.8;
-    content: counter(son);
     padding-left: 320px;
     /*TODO:  tugrimi ?*/
 }
