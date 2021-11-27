@@ -91,7 +91,6 @@ img {
     background-repeat: no-repeat;
     background-position: top 25px center,calc(50% + 355px) bottom;
     background-size: 160px 160px, 710px 696px;
-    z-index: -1;
     margin-bottom: 20px;
 }
 
@@ -221,7 +220,6 @@ img {
 
 .our-collection__list {
     margin: 0;
-    padding: 0;
     list-style: none;
     padding: 50px 143px;
     background-color: #F5F5ED;
