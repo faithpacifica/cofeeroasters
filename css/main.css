@@ -404,8 +404,8 @@ img {
     line-height: 75px;
     color: #333333;
     opacity: 0.8;
-    padding-left: 320px;
-    /*TODO:  tugrimi ?*/
+    text-align: right;
+    display: block;
 }
 
 .working-system__item:not(:last-child) {
