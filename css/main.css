@@ -217,23 +217,19 @@ img {
     line-height: 59px;
     color: #000000;
 }
+.inner-wrapper{
+     background-color: #F5F5ED;
+     padding-top:50px;
+}
 
 .our-collection__list {
     margin: 0;
     list-style: none;
     padding: 50px 143px;
-    background-color: #F5F5ED;
-    position:relative;
+   
 }
 
-.our-collection__list::before{
-border:1px dashed red;
-    content: "";
-    position: absolute;
-    z-index: 6;
-    left: 0;
-    height: 2px;
-}
+
 
 .our-collection__item {
     display: flex;
