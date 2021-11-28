@@ -223,6 +223,16 @@ img {
     list-style: none;
     padding: 50px 143px;
     background-color: #F5F5ED;
+    position:relative;
+}
+
+.our-collection__list::before{
+border:1px dashed red;
+    content: "";
+    position: absolute;
+    z-index: 6;
+    left: 0;
+    height: 2px;
 }
 
 .our-collection__item {
@@ -396,7 +406,7 @@ img {
 
 .working-system__item::before {
     text-align: right;
-    content: counter(son);
+    content: '0'counter(son);
     /*TODO:not working*/
     top: 20px;
     right: 20px;
@@ -460,6 +470,9 @@ img {
     justify-content: space-between;
 }
 
+.socials__link{
+    text-decoration:none;
+}
 .socials__link:not(:last-child) {
     margin-right: 30px;
 }
