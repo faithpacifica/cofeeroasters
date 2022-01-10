@@ -1,4 +1,4 @@
-/* СCUSTOM PROPS */
+/* СUSTOM PROPS */
 
 :root {
     --primary: #0A775F;
@@ -74,6 +74,19 @@ img {
     outline-offset: 2px;
 }
 
+/* visually hidden */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 /* CONTAINER */
 .container {
@@ -89,14 +102,10 @@ img {
 /* SITE_HEADER */
 .site-top {
     background-color: #F3D7B7;
-    /* background-image: url(../img/intro-stamp.png),url(../img/intro-bg-image.jpg);
-    background-repeat: no-repeat;
-    background-position: top 25px center,calc(50% + 355px) bottom;
-    background-size: 160px 160px, 710px 696px; */
     margin-bottom: 20px;
 }
 
-.site-header{
+.site-header {
     padding: 40px 0;
 }
 
@@ -155,12 +164,16 @@ img {
 /* INTRO */
 .intro__wrapper {
     display: flex;
+}
+
+.intro__container {
+    padding-right: 0px;
+    padding-left: 0;
 
 }
 
 .intro__content {
     width: 472px;
-    /* TODO:4 tomondan margin bn siqish tugrimi? */
     margin-top: 110px;
     margin-left: 100px;
     margin-right: 115px;
@@ -213,6 +226,7 @@ img {
 
 .intro__img-wrapper {
     position: relative;
+    flex-grow: 1;
 }
 
 .intro__img-badge {
@@ -221,13 +235,14 @@ img {
     height: 160px;
     left: 0;
     top: 0;
-    transform:translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .intro__img-background {
     position: absolute;
     width: 710px;
     height: 696px;
+    max-height: 100%;
     display: block;
 }
 
@@ -250,23 +265,26 @@ img {
     top: 30px;
     left: -140px;
 }
+
 .leave-bottom-left {
     position: absolute;
     left: -165px;
-    bottom:125px;
+    bottom: 125px;
 }
 
 .leave-center-1 {
     position: absolute;
-    top:50%;
+    top: 50%;
     right: -160px;
-    
+
 }
+
 .leave-center-2 {
     position: absolute;
-    top:47%;
+    top: 47%;
     right: -400px;
 }
+
 /* ------------------------------ */
 
 .our-collection__heading {
@@ -345,6 +363,14 @@ img {
     background-image: url(../img/bg-brown.png);
     background-repeat: no-repeat;
     background-size: 100% 703px;
+    position: relative;
+}
+
+.index-features__inner-img {
+    position: absolute;
+    top: 300px;
+    left: 25px;
+    transform: translate(-35%, -45%);
 }
 
 .features__heading {
@@ -371,14 +397,6 @@ img {
     padding: 0;
     list-style: none;
     display: flex;
-    position: relative;
-}
-
-.features__list-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-35%, -45%);
 }
 
 
@@ -429,11 +447,11 @@ img {
     margin-bottom: 50px;
 }
 
-.working-system{
+.working-system {
     position: relative;
 }
 
-.working-system__img{
+.working-system__img {
     position: absolute;
     right: 70px;
     top: 50px;
@@ -462,12 +480,12 @@ img {
 }
 
 .working-system__list:before {
-    content:'';
+    content: '';
     position: absolute;
-    background-image:url(../img/dashed-line.svg);
-    left:0;
-    top:-40px;
-    width:900px;
+    background-image: url(../img/dashed-line.svg);
+    left: 0;
+    top: -40px;
+    width: 900px;
     height: 3px;
 }
 
@@ -535,7 +553,6 @@ img {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 1px;
-
 }
 
 
